@@ -24,8 +24,3 @@ target
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-
-# 里面有不能公开的关键信息 
-wx.properties
-sms.properties
-kaoqin.properties
