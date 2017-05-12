@@ -59,11 +59,11 @@
 
         <div class="container-fluid" id="model-top-div">
             <div class="col-md-9 col-sm-12 col-xs-12">
-                <a href="/" class="index-href"><img src="/web/imgs/zslin-logo-3.png"/></a>
+                <a href="/" class="index-href"><img src="/web/imgs/zslin-logo-4.png"/></a>
                 <ul class="model-top-ul">
-                    <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="/"><i class="fa fa-home"></i> 首页</a></li>
                     <li th:each="navCate : ${session.navCateList}"><a th:href="'/?cateId='+${navCate.id}"><i th:class="${navCate.icon}"></i> <span th:text="${navCate.name}"></span></a></li>
-                    <li><a href="/about"><i class="fa fa-at"></i> About</a></li>
+                    <li><a href="/about"><i class="fa fa-at"></i> 关于</a></li>
                 </ul>
             </div>
             <div class="col-md-3 col-sm-12 col-xs-12 text-left model-search-div">
@@ -80,7 +80,7 @@
         </div><!-- /.main-container -->
 
         <div class="navbar-fixed-bottom model-bottom-div text-center">
-            &copy; 2016&nbsp;-&nbsp;<a href="http://www.zslin.com">知识林</a>，<span title="文章阅读次数" class="read-count"><i class="fa fa-eye"></i> <b></b></span>
+            &copy; 2016&nbsp;<span title="文章阅读次数" class="read-count"><i class="fa fa-eye"></i> <b></b></span>
         </div>
     </body>
 </html>

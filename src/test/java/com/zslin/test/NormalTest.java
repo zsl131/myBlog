@@ -1,6 +1,7 @@
 package com.zslin.test;
 
 import com.zslin.app.tools.HtmlRegexpTools;
+import com.zslin.basic.auth.tools.SecurityUtil;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -23,5 +24,11 @@ public class NormalTest {
     public void test2() {
         String str = "这里是头\\n二级目录第二个一级目录第二个的二级目录";
         System.out.println(str.replace("[TOCM]", ""));
+    }
+
+    @Test
+    public void test03() throws Exception {
+        String str = "admin";
+        System.out.println(SecurityUtil.md5(str, "admin"));
     }
 }

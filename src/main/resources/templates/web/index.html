@@ -6,7 +6,7 @@
       layout:decorator="fragments/webModel">
 
     <head>
-        <title th:text="${category eq null ? 'Java SpringBoot Thymeleaf':category.name}+' - '+${session.appConfig.appName}">网站首页</title>
+        <title th:text="${category eq null ? session.appConfig.appName:category.name}+' - '+${session.appConfig.appName}">网站首页</title>
         <link rel="stylesheet" type="text/css" href="/web/article.css"/>
         <script type="text/javascript" src="/web/article.js"></script>
 

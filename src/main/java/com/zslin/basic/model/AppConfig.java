@@ -38,42 +38,6 @@ public class AppConfig {
 	/** 页末联系人 */
 	private String contant;
 
-	/** 是否显示支付二维码 */
-	@Column(name = "show_pay")
-	private Integer showPay;
-
-	/** 显示广告 */
-	@Column(name = "show_add")
-	private Integer showAdd;
-
-	/** 管理员邮箱 */
-	@Column(name = "admin_email")
-	private String adminEmail;
-
-	public Integer getShowAdd() {
-		return showAdd;
-	}
-
-	public void setShowAdd(Integer showAdd) {
-		this.showAdd = showAdd;
-	}
-
-	public String getAdminEmail() {
-		return adminEmail;
-	}
-
-	public void setAdminEmail(String adminEmail) {
-		this.adminEmail = adminEmail;
-	}
-
-	public Integer getShowPay() {
-		return showPay;
-	}
-
-	public void setShowPay(Integer showPay) {
-		this.showPay = showPay;
-	}
-
 	public String getContant() {
 		return contant;
 	}
